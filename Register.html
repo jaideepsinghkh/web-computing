@@ -1,0 +1,82 @@
+<html>
+	<head>
+		<script type="text/javascript" src="registerScripts.js"></script>
+	</head>
+	
+	<header>
+		<link href="homeStyle.css" rel="stylesheet" type="text/css"/>
+	</header>
+
+	<body>
+	
+		<div id="wrapper">
+		
+			<div id="header">
+				<h1>
+					Brisbane City Public Art
+				</h1>
+			</div>
+		
+			<div id="menu">
+					<a href="Home.html">Home</a><a href="">Register</a><a href="">Favourites</a><a href="">Tools</a><a href="">History</a><a href="">Help</a>
+			</div>
+			
+			<div id="sidebar">
+				<div class="sidebox">
+					<h1>
+						Box One
+					</h1>
+					<p>
+						The quick brown fox jumped over the lazy dog.
+					</p>
+				</div>
+			
+				<div class="sidebox">
+					<h1>
+						Box Two
+					</h1>
+					<p>
+						The quick brown dog jumped over the lazy fox.
+					</p>
+				</div>
+			
+			</div>
+			
+			<div id="content">
+				<p>
+					<form id="form1" onsubmit="return validate();">
+						Surname: <input id="surname" type="text" name="surname" onkeypress="dismissSurnameWarning()"/><span id="surnameMissing" style="color:red;visibility:hidden">Surname is a required field.</span><br>
+						Sex:<br>
+						<input id="sexMale" type="radio" name="sexMale" value="male"/>Male<br>
+						<input id="sexFemale" type="radio" name="sexFemale" value="female"/>Female<br>
+						eMail: <input id="email" type="text" name="email" onkeypress="dismissEmailWarning()"/><span id="invalidEmail" style="color:red;visibility:hidden">Email address missing or invalid.</span><br>
+						Address: <textarea id="address" name="address" onkeypress="dismissAddressWarning()"></textarea><span id="addressMissing" style="color:red;visibility:hidden">Address is a required field.</span><br>
+						State: <select name="state">
+							<option value="QLD">QLD</option>
+							<option value="NSW">NSW</option>
+							<option value="VIC">VIC</option>
+							<option value="ACT">ACT</option>
+							<option value="TAS">TAS</option>
+							<option value="SA">SA</option>
+							<option value="WA">WA</option>
+							<option value="NT">NT</option>
+						</select><br>
+						Password: <input id="password" type="password" name="password"/><br>
+						Confirm Password: <input id="passwordConfirm" type="password" name="passwordConfirm"/><br>
+						<input type="submit">
+		</form>
+				</p>
+			</div>
+			
+			<div id="footer">
+				<p>
+					footer footer footer
+				</p>
+				
+			</div>
+			
+		</div>
+		
+	</body>
+	
+</html>
